@@ -1,48 +1,103 @@
-* {background-color: black} 
+body {
+  display: flex;
+  position: static;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  padding-top: 0px;
+  background-color: black;
+  color: seashell;
+  font-family: Helvetica;
+}
 
 /* Header */
-
-header {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 80px;
-  border-bottom: 1px solid seashell;
-  background-color: white;
-  font-family: "Verdana", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-}
 
 .logo {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  padding-left: 30px;
+  padding-left: 28px;
 }
 
-.logo img {
-  width: 70px;
-  height: 60px;
-  margin-right: 12px;
-}
-
-.logo span {
-  color: mediumaquamarine;
-}
-
-header nav {
-  padding-right: 40px;
+header {
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 69px;
+  font-weight: bold;
+  font-family: Helvetica;
+  font-size: 22px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
 }
 
 /* Main Content Container */
 
-.content {
-  font-family: Helvetica;
+.Our-Mission {
+  display: flex;
+  flex-direction: column;
+  width: 12000px;
+  height: 700px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  margin-top: 69px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Teaofthemonth , .images {
+  width: 1000px;
+  height: 700px;
+  padding-top: 70px;
+  margin: auto;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   font-size: 22px;
-  background-color: black;
+  fontnt-weight: bold;
+}
+
+.menuimage {
+  display: block;
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 
@@ -50,28 +105,19 @@ header nav {
 
 footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 325px;
-  background-color: mediumaquamarine;
-  margin: auto;
-  font-family: "Verdana", sans-serif;
-  font-size: 12px;
 }
 
-footer .title {
-  display: inline-block;
-  padding-right: 25px;
-  border-right: 2px solid white;
-  font-family: "Georgia", serif;
-  font-size: 16px;
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   font-weight: bold;
-  color: white;
 }
 
-footer nav {
-  display: inline-block;
-  padding-left: 25px;
+.copyright {
+  text-align: left;
+  margin-left: 20px;
 }
